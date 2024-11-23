@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: #1c1c1c;
+}
+
+header .logo {
+  font-size: 24px;
+  color: #fff;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #999;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+#connect-wallet {
+  background-color: #00b4d8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.chart-section {
+  flex: 2;
+}
+
+#chart-container {
+  width: 100%;
+  height: 400px;
+  background-color: #222;
+  border: 1px solid #333;
+}
+
+.swap-section {
+  flex: 1;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+form input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+#swap-button {
+  width: 100%;
+  background-color: #00b4d8;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#swap-button:hover {
+  background-color: #0077a7;
+}
