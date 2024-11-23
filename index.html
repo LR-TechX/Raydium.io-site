@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Swap UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <header>
+      <div class="logo">RAY</div>
+      <nav>
+        <a href="#">Swap</a>
+        <a href="#">Liquidity</a>
+        <a href="#">Portfolio</a>
+        <a href="#">More</a>
+      </nav>
+      <button id="connect-wallet">Connect Wallet</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Chart Section -->
+      <div class="chart-section">
+        <h2>RAY / SOL</h2>
+        <div id="chart-container">
+          <!-- Chart will be rendered here -->
+        </div>
+      </div>
+
+      <!-- Swap Section -->
+      <div class="swap-section">
+        <form>
+          <label for="from-token">From</label>
+          <select id="from-token">
+            <option value="sol">SOL</option>
+          </select>
+          <input type="number" placeholder="Amount">
+
+          <label for="to-token">To</label>
+          <select id="to-token">
+            <option value="ray">RAY</option>
+          </select>
+          <input type="number" placeholder="Amount" disabled>
+
+          <button type="button" id="swap-button">Swap</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
